@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Bootstrap 4 Learning Template</title>
+</head>
+
+<body>
+	<!-- Navbar Start -->
+	<!-- 
+		Hint:
+		Use navbar classes for styling
+
+		Read more - https://getbootstrap.com/docs/4.0/components/navbar/
+	-->
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+			<a class="navbar-brand" href="#"></a>
+			<!--
+				Hint:
+				Use bootstrap boxed container.
+			-->
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Content here -->
+				
+			<div class="collapse navbar-collapse">
+				<!--
+					Navbar Hamburger Button
+	
+					Hint: 
+					Use classes to hide navbar on larger screens.
+					Use data-* values for the dropdown classes to work. 
+					Understand what aria-* values are there form
+	
+					Read more - https://getbootstrap.com/docs/4.0/components/navbar/
+				-->
+				<!-- Image and text -->
+
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"  DATA-ATTRIBUTES ARIA-ATTRIBUTES>
+		            <span class="navbar-toggler-icon"></span>
+	              </button>
+
+				<!--
+					Hint:
+					Use class for navbar logos. Make image display inline-block
+				-->
+				<a class="navbar-brand " data-toggle="collapse" href="#">
+					<img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+						class="d-inline-block" alt="">
+				    Bootstrap
+				</a>
+	
+				<!-- 
+					Hint:
+					This portion will be hidden on desktop. On mobile it will collapse/expand based on Navbar Hamburger button
+				-->
+
+				<div class="navbar-collapse collapse show" id="#multiCollapseExample2" style>
+					<!--
+						Hint:
+						Navbar navigation class. Make this element fill the empty spacing with its next sibling
+					-->
+						<ul class="navbar-nav mr-auto">
+							<!--
+								Hint:
+								Navigation Item and active
+							-->
+							<li class="nav-item active">
+								<!--
+									Hint:
+									Navigation Item Link
+								-->
+								<a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<!--
+								Hint:
+								Navigation Item
+							-->
+							<li class="nav-item">
+								<!--
+									Hint:
+									Navigation Item Link
+								-->
+								<a class="nav-link text-muted" href="#">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-muted" href="#">Pricing</a>
+							</li>
+						</ul>
+					<!--
+						Hint:
+						Inline form
+					-->
+					<form class="form-inline">
+						<!--
+							Hint:
+							Group both input and button. Make them appear connected with each other.
+						-->
+						<div class="input-group">
+							<!--
+								Hint:
+								Form input classes regular
+							-->
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+							<!-- 
+								Hint:
+								Make button appended to input
+							-->
+							<div class="input-group-append">
+								<!--
+									Hint:
+									Regular button with primary background color.
+								-->
+								<button class="btn btn-primary" type="search">Search</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			  </div>
+		</nav>
+	
+  
+	
+	<section>
+		<!--
+			Hint:
+			Use Bootstrap class for hero sections.
+
+			Read more - https://getbootstrap.com/docs/4.0/components/jumbotron/
+		-->
+		<div class="jumbotron">
+			<div class="row justify-content-between">
+				<!--
+					Hint:
+					4 column on laptop, 12 on mobile
+				-->
+				<div class="col-md-4 col-sm-12">
+					<!--
+						Hint:
+						Use the largest font size class. ie display-* classes
+					-->
+					<h1 class="display-1">Big Hero Display</h1>
+					<!--
+						Hint:
+						Use class for subtitles.
+					-->
+					<p class="subtitles">Hero leading text</p>
+				</div>
+				<!--
+					Hint:
+					4 column with 4 column offset on laptop, 12 on mobile
+				-->
+				<div class="card" style="width:23rem;" >
+					<!--
+						Hint:
+						Card classes
+					-->
+					<div class="card-body">
+						<!--
+							Hint:
+							Card classes (inner)
+						-->
+						<div class="input-wrapper">
+							<form>
+								<!--
+									Hint:
+									Class for form input wrapper
+
+									Read More - https://getbootstrap.com/docs/4.0/components/forms/
+								-->
+								<div class="form-group">
+                                     <lable for="input-name">Full Name</lable>
+									 <br>
+									 <input type="name" class="form-control" id="input-name"
+										aria-describedby="emailHelp" placeholder="Your name">
+								</div>
+								<div class="form-group">
+									<label for="input-email">Email address</label>
+									<br>
+									<!--
+										Hint:
+										Class for input field
+										Understand why aria-describedby is used.
+									-->
+									<input type="email" class="form-control" id="input-email"
+										aria-describedby="emailHelp" placeholder="Enter email">
+										<br>
+									<!--
+										Hint:
+										Make text color muted
+									-->
+									<small id="emailHelp" class="form-text text-muted">We'll never share your email with
+										anyone else.</small>
+								</div>
+								<!--
+									Hint:
+									Class for form checkbox wrapper
+								-->
+								<div class="form-check">
+									<!--
+										Hint:
+										Checkbox specific input classes
+									-->
+									<input type="checkbox" class="form-check-input" id="input-terms">
+									<!--
+										Hint:
+										Checkbox label class
+									-->
+									<label class="form-check-label" for="input-terms">I agree to <a href="#">Terms &
+											Conditions</a></label>
+								</div>
+								<!--
+									Hint:
+									Regular Button With Primary Color
+								-->
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		Hint:
+		Use vertical only padding of 5 units (ie. p-*)
+	-->
+	<section class="py-5">
+		<div class="container">
+			<!--
+				Hint:
+				This will be a row class and
+				Use flex class to align items centered
+			-->
+			<div class="row">
+				<!--
+					Hint:
+					5 Column on laptop, 12 on mobile.
+					Item displayed first on laptop, second on mobile
+					Text is right aligned on laptop, center aligned on mobile
+				-->
+				<div class="col-md-5 text-md-right order-md-0  col-sm-12 order-2 text-sm-center text-center">
+					<h3>Some Heading</h3>
+					<!-- 
+						Hint:
+						Lead text
+					-->
+					<p class="lead">Lead Text</p>
+					<p>More Action Text</p>
+					<!--
+						Hint:
+						Outline button with green color
+					-->
+					<button class="btn btn-outline-success">Learn More</button>
+				</div>
+				<!--
+					Hint:
+					7 Column on laptop, 12 on mobile.
+					Item displayed second on laptop, first on mobile
+				-->
+				<div class="col-md-7 order-md-0 col-sm-12 order-1">
+					<!--
+						Hint:
+						Image takes full width of the container and has rounded edges
+					-->
+					<img class="rounded img-fluid" src="https://picsum.photos/800/600">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		Hint:
+		Green background
+		Use vertical only padding of 5 units (ie. p-*)
+	-->
+	<section class="py-5 bg-success">
+		<!--
+			Hint:
+			Conatiner class goes here.
+			Child nodes (rows) will be ordered differently on mobile and laptop.
+			To achieve this use flex direction classes here
+		-->
+		<div class="container">
+			<!--
+				Hint:
+				Row class goes here
+				5 Units of padding bottom (ie. p-*)
+				Always on top for mobile and desktop 
+			-->
+			<div class=" row pb-5">
+				<!--
+					Hint:
+					12 column, text centered
+				-->
+				<div class="col text-center sticky-top">
+					<!--
+						Hint:
+						Text color will be white
+					-->
+					<h2 class="text-white">Our Journey</h2>
+				</div>
+			</div>
+			<!--
+				HINT:
+				Row class goes here.
+				Display as 2nd item on laptop, 3rd on mobile
+				Child nodes will have equal space around them
+				Child nodes will be bottom aligned
+				
+				Read More - https://getbootstrap.com/docs/4.0/utilities/flex/
+			-->
+			<div class="row align-self-center ">
+				<!--
+					Hint:
+					4 column on laptop, 12 on mobile
+					3 units of margin bottom
+				-->
+				<div class="mb-3 col-md-4 order-md-0 col-sm-12 order-3">
+					<!--
+						Hint:
+						This is a card.
+						Use card wrapper, header, body and footer classes
+					-->
+					<div class="card" style="width:23rem'">
+						<div class="card-header">
+							<!--
+								Hint:
+								Use red colored rounded badges
+
+								Read more - https://getbootstrap.com/docs/4.0/components/badge/
+							-->
+							Card Title <span class="badge badge-pill badge-danger">New</span>
+						</div>
+						<div class="card-body">
+							Card Body Text
+						</div>
+						<div class="card-footer">
+							<!--
+								Hint:
+								Dark button
+							-->
+							<button class="btn btn-dark">Action</button>
+						</div>
+					</div>
+				</div>
+				<!--
+					Hint:
+					4 column on laptop, 12 on mobile
+					3 units of margin bottom
+				-->
+				<div class="mb-3 col-md-4 order-md-0 col-sm-12 order-4">
+					<!--
+						Hint:
+						This is a card.
+						Use card wrapper, image, and body classes
+					-->
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/400/300">
+						<div class="card-body">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+				HINT:
+				Row class goes here.
+				Display as 3rd item on laptop, 2nd on mobile
+				Child nodes will have space between them
+				Child nodes will be top aligned
+				
+				Read More - https://getbootstrap.com/docs/4.0/utilities/flex/
+			-->
+			<div class="row align-top">
+				<!--
+					Hint:
+					4 column on laptop, 12 on mobile
+					3 units of margin bottom
+				-->
+				<div class="mb-3 col-md-4 order-md-0 col-sm-12 order-1">
+					<!--
+						Hint:
+						Blue alert with themeed link
+
+						Read More - https://getbootstrap.com/docs/4.0/components/alerts/
+					-->
+					<div class="alert alert-primary" role="alert">
+						This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click
+						if you like.
+					</div>
+				</div>
+				<!--
+					Hint:
+					4 column on laptop, 12 on mobile
+					3 units of margin bottom
+				-->
+				<div class="mb-3 col-md-4 order-md-0 col-sm-12 order-2">
+					<!--
+						Hint:
+						Green alert with themed link
+
+						Read More - https://getbootstrap.com/docs/4.0/components/alerts/
+					-->
+					<div class="alert alert-success" role="alert">
+						This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click
+						if you like.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		Hint:
+		Use vertical only padding of 5 units (ie. p-*)
+	-->
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<!--
+					Hint:
+					Column 4
+					Navigation for Tabs
+					Fill missing attributes
+
+					Read more - https://getbootstrap.com/docs/4.0/components/navs/
+				-->
+				<div class="pl-3 col-md-4 col-sm-4 col-4 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a class="nav-link active" >Tab 1</a>
+					<a class="nav-link" id="tab-2" >Tab 2</a>
+				</div>
+				<!--
+					Hint:
+					Colum 8
+					Tab content holder
+				-->
+				<div class="col-md-8 col-sm-8 col-8" id="tab-content">
+					<!--
+						Hint:
+						Active tab
+						Fill missing id, role, aria values
+					-->
+					<div class="active-tab" >
+						<!--
+							Hint:
+							This is a list group.
+							Read more - https://getbootstrap.com/docs/4.0/components/list-group/
+						-->
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+								<div class="d-flex w-100 justify-content-between">
+									<h5 class="mb-1">List group item heading</h5>
+									<small class="text-muted">3 days ago</small>
+								</div>
+								<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+									risus varius blandit.</p>
+								<small class="text-muted">Donec id elit non mi porta.</small>
+							</a>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Cras justo odio
+								<span class="badge badge-primary badge-pill">14</span>
+							</li>
+						</div>
+					</div>
+					<div class="d-none">
+						Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint
+						duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu
+						aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat
+						commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu
+						deserunt excepteur ea incididunt minim occaecat.
+					</div>
+				</div>
+				<!-- </div> -->
+				<div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		Hint:
+		Look for bootstrap footer classes
+		Light background
+		Vertical padding of 3 units
+	-->
+	<footer class="footer py-3 bg-light">
+		<div class="container">
+			<!--
+				Hint:
+				Text muted color
+			-->
+			<span class="text-muted">This is a footer</span>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
